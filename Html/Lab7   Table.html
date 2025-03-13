@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+        }
+        .mytable{
+            width: 80%;
+        }
+        table,td,th{
+            border: 2px solid black;
+            border-collapse:collapse ;
+            font-size: 20px;
+        }
+       
+        tr:nth-child(odd){
+            background-color: lavender;
+           
+        }
+        /* You can apply same thing with td also */
+        tr:nth-child(even){
+           background-color: azure;
+           
+        }
+        /* tr:nth-child(1){
+            background-color: rgb(226, 147, 43);
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <table class="mytable">
+        <Caption><h2>Student Info</h2></Caption>
+        <div>
+           <thead>
+            <tr>
+                <th>Sid</th>
+                <th>Sname</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Course</th>
+            </tr>
+           </thead>
+
+           <tbody>
+            <tr>
+                <td>101</td>
+                <td>kaushik</td>
+                <td>kp@gmail.com</td>
+                <td>8709252029</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>kaushik</td>
+                <td>kp@gmail.com</td>
+                <td>8709252029</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>kaushik</td>
+                <td>kp@gmail.com</td>
+                <td>8709252029</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>kaushik</td>
+                <td>kp@gmail.com</td>
+                <td>8709252029</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>kaushik</td>
+                <td>kp@gmail.com</td>
+                <td>8709252029</td>
+                <td>Java</td>
+            </tr>
+
+           </tbody>
+        </table>
+        </div>
+    </div>
+    
+</body>
+</html>

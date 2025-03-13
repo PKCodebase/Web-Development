@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+        }
+        .mytable{
+            width: 80%;
+        }
+        table,td,th{
+            border: 2px solid black;
+            border-collapse:collapse ;
+            font-size: 20px;
+        }
+        tr:nth-child(odd){
+            background-color: lavender;
+           
+        }
+        tr:nth-child(even){
+           background-color: azure;
+           
+        }
+/*        
+        tr:nth-child(odd){
+            background-color: lavender;
+           
+        }
+        You can apply same thing with td also */
+        /* tr:nth-child(even){
+           background-color: azure;
+           
+        } */
+         /* tr:nth-child(1){
+            background-color: rgb(226, 147, 43);
+        }  */ 
+    </style>
+</head>
+<body>
+    <div>
+        <table class="mytable">
+        <Caption><h2>Student Info</h2></Caption>
+        <div>
+           <thead>
+            <tr>
+                <th>Sid</th>
+                <th>Sname</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Course 1</th>
+                <th>Course 2</th>
+            </tr>
+           </thead>
+
+           <tbody>
+            <tr>
+                <td>101</td>
+                <td>kaushik</td>
+                <td>kp@gmail.com</td>
+                <td>8709252029</td>
+                <td>Java</td>
+                <td>React</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Rahul</td>
+                <td>rahul@gmail.com</td>
+                <td>8709258909</td>
+                <td>React</td>
+                <td>Angular</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Rakesh</td>
+                <td>rakesh@gmail.com</td>
+                <td>8778092029</td>
+                <td>React</td>
+                <td>Html</td>
+            </tr>
+            <tr>
+                <td rowspan="2">104</td>
+                <td rowspan="2">Vivek</td>
+                <td>vivek@gmail.com</td>
+                <td>6509252898</td>
+                <td rowspan="2">Java</td>
+                <td rowspan="2">Node</td>
+            </tr>
+                <tr>
+                <td>vv@gmail.com</td>
+                <td>6578092432</td>
+            </tr>
+            
+            <tr>
+                <td>105</td>
+                <td>Ravi</td>
+                <td>rv@gmail.com</td>
+                <td>8709345621</td>
+                <td colspan="2">React</td>
+                
+            </tr>
+
+           </tbody>
+        </table>
+        </div>
+    </div>
+    
+</body>
+</html>

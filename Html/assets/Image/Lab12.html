@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(230, 223, 223);
+        }
+        .myRegTable{ 
+            text-align: left; 
+            font-family: verdana;
+            font-size: 20px;
+            font-weight:inherit;
+        }
+        td {
+    padding: 10px 20px; /* Adds spacing between label and input */
+}
+        input,select,textarea { 
+            color:red; 
+            font-family: verdana;
+            font-size: 20px;
+            font-weight:inherit;
+            padding: 5px 10px; 
+            margin: 8px 15px;
+            border: 1px solid black; 
+            border-radius:5px;
+        }
+
+        input[type=submit] ,input[type=reset],button{ 
+            color: green;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight:inherit;
+            padding: 10px 10px;
+            margin: 22px 0px;
+        }
+        input[type=radio],input[type=checkbox] { 
+            color: red;
+            width: 1.5em; 
+            height: 1.5rem;
+        }
+ 
+        div{ 
+        background-color:beige; 
+        width:60%; 
+        margin-left:250px;  
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <form action="http://localhost:8080/register" method="POST" enctype="multipart/form-data">
+         <table class="myRegTable">
+           <caption><h2>Registration Form</h2></caption>
+
+           <tr>
+            <td><label for="mysid">Student Id</label></td>
+            <td>
+                <input 
+                type="text" 
+                name="sid" 
+                id="mysid" 
+                value="A-1" 
+                size="20"
+                readonly>
+            </td>
+           </tr>
+
+           <tr>
+            <td><label for="fname"> Full Name :</label></td>
+            <td>
+                <input 
+                type="text"
+                id="fname"
+                name="fname"
+                />
+            </td>
+           </tr>
+
+           <tr>
+            <td><label for="email"> Email :</label></td>
+            <td>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                />
+            </td>
+           </tr>
+
+           <tr>
+            <td><label for="pword">Password : </label></td>
+            <td>
+                <input
+                type="password"
+                name="pword"
+                id="pword"
+                />
+            </td>
+           </tr>
+
+           <tr>
+            <td><label for="courses">Courses : </label></td>
+            <td>
+                <input type="radio"id="courses"name="courses"value="Java"/> Java<br/>
+                <input type="radio" id="courses" name="courses" value="Python"/>Python <br/>
+                <input type="radio" id="courses" name="courses" value="Html"/>Html <br/>
+                <input type="radio" id="courses" name="courses" value="Spring"/>Spring 
+            </td>
+           </tr>
+
+           <tr> 
+            <td> <label for="courses" > Courses : </label></td> 
+            <td> 
+            <select id="courses" name="courses" > 
+            <option value="">select</option> 
+            <option value="Java">Java </option> 
+            <option value="Python"> Python</option> 
+            <option value="Angular">Angular </option> 
+            <option value="MongoDB"> MongoDB</option> 
+            </select> 
+            </td> 
+            </tr>
+
+             <br/>
+
+            <tr>
+                <td><label for="photo"> Upload Photo: </label></td>
+                <td><input type="file" id="photo" name="photo"/></td>
+            </tr>
+
+            <tr>
+                <td><label for="resume">Upload Resume:</label></td>
+                <td><input type="file" id="resume" name="resume"/></td>
+            </tr>
+
+            <tr>
+                <td><label for="myremarks">Remarks : </label></td>
+                <td>
+                    <textarea name="remarks" id="myremarks" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+
+
+            <tr>
+                <!-- It maintain the Gap -->
+                <td colspan="2"> 
+                    <input type="button" value="I am button 1"/>
+                    <button>I am button 2</button>
+                    <input type="submit" id="x" value="Register Now" />
+                    <input type="reset" id="y" value="Clear Form" />
+                    <input type="hidden" name="mytoken" value="D1X5w9"/>
+                </td>
+            </tr>
+
+         </table>
+
+        </form>
+    </div>
+</body>
+</html>
