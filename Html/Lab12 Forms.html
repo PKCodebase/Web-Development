@@ -5,48 +5,129 @@
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: rgb(230, 223, 223);
-        }
-        .myRegTable{ 
-            text-align: left; 
-            font-family: verdana;
-            font-size: 20px;
-            font-weight:inherit;
-        }
-        td {
-    padding: 10px 20px; /* Adds spacing between label and input */
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
-        input,select,textarea { 
-            color:red; 
-            font-family: verdana;
-            font-size: 20px;
-            font-weight:inherit;
-            padding: 5px 10px; 
-            margin: 8px 15px;
-            border: 1px solid black; 
-            border-radius:5px;
-        }
 
-        input[type=submit] ,input[type=reset],button{ 
-            color: green;
-            font-family: verdana;
-            font-size: 20px;
-            font-weight:inherit;
-            padding: 10px 10px;
-            margin: 22px 0px;
-        }
-        input[type=radio],input[type=checkbox] { 
-            color: red;
-            width: 1.5em; 
-            height: 1.5rem;
-        }
- 
-        div{ 
-        background-color:beige; 
-        width:60%; 
-        margin-left:250px;  
-        }
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Form Container */
+div {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Table Styling */
+.myRegTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table Labels */
+.myRegTable td {
+    padding: 12px 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Input Fields */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+/* Input Focus Effect */
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Readonly Field */
+input[readonly] {
+    background: #f1f1f1;
+    cursor: not-allowed;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* File Input */
+input[type="file"] {
+    background: #f9f9f9;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+input[type="submit"], input[type="reset"], button {
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Button Hover Effect */
+input[type="submit"]:hover, 
+input[type="reset"]:hover, 
+button:hover {
+    background: #0056b3;
+}
+
+/* Form Title */
+caption h2 {
+    text-align: center;
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    div {
+        width: 90%;
+    }
+    
+    .myRegTable td {
+        display: block;
+        text-align: left;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 100%;
+    }
+}
+
 
     </style>
 </head>
@@ -148,11 +229,11 @@
             <tr>
                 <!-- It maintain the Gap -->
                 <td colspan="2"> 
-                    <input type="button" value="I am button 1"/>
-                    <button>I am button 2</button>
+                    <!-- <input type="button" value="I am button 1"/>
+                    <button>I am button 2</button> -->
                     <input type="submit" id="x" value="Register Now" />
-                    <input type="reset" id="y" value="Clear Form" />
-                    <input type="hidden" name="mytoken" value="D1X5w9"/>
+                    <!-- <input type="reset" id="y" value="Clear Form" />
+                    <input type="hidden" name="mytoken" value="D1X5w9"/> -->
                 </td>
             </tr>
 

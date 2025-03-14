@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    }
+
+  div {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+   }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption h2 {
+    margin-bottom: 15px;
+}
+
+td {
+    padding: 10px ;
+    text-align: left;
+    padding-right: 50px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[list] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+    </style>
+</head>
+<body>
+    <div align="center" style="background-color: antiquewhite;">
+       <form action="hello.jsp" method="GET" enctype="text/plain" autocomplete="off">
+        <table>
+            <caption><h2>Registration Form</h2></caption>
+            <tr>
+                <td><label for="sid">SID:</label></td>
+                <td><input type="text"
+                    id="sid"
+                    name="sid"
+                    value="A-01"
+                    placeholder="SID" readonly
+                    >
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="fullName">Full Name:</label></td>
+                <td><input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Full name...."
+                    maxlength="25"
+                    required
+                    autofocus/>
+                </td>
+            </tr>
+             
+
+            <tr>
+                <td><label for="phone">Mobile:</label></td>
+                <td><input type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone Number..."
+                    maxlength="[0-9]{10}"
+                    required
+                    />
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email.."
+                    maxlength="25"
+                    required
+                    />
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="courses"></label>Courses:</td>
+                <td>
+                 <input list="mycourses" id="courses" name="courses" required/>
+                 <datalist id="mycourses">
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                    <option value="C++">C++</option>
+                    <option value="ReactJs">ReactJs</option>
+                    <option value="MySql">MySql</option>
+                    <option value="Html">Html</option>
+                 </datalist>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"   align="center">
+                    <input type="submit" value="Submit Now">
+                </td>
+            </tr>
+
+        </table>
+       </form> 
+    </div>
+</body>
+</html>
