@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML 5 New Semantic Elements</title>
+    <style>
+        body {
+            font-family: Cambria, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: goldenrod;
+            padding: 20px;
+        }
+        header img {
+            height: 60px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        main {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        .content {
+            width: 70%;
+        }
+        .sidebar {
+            width: 30%;
+        }
+        .article, .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .article span, .section span {
+            font-size: 22px;
+            font-weight: bold;
+            color: red;
+        }
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+        .course-card {
+            text-align: center;
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .course-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            background-color: goldenrod;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <nav>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <article class="article">
+                <span>Java 9 New Features:</span>
+                <p>Java 9 brings various new features including modularity, JShell, and API enhancements.</p>
+                <section class="section">
+                    <span>Feature 1:</span>
+                    <p>Details about Java 9 feature 1...</p>
+                </section>
+                <section class="section">
+                    <span>Feature 2:</span>
+                    <p>Details about Java 9 feature 2...</p>
+                </section>
+            </article>
+            <article class="article">
+                <span>HTML 5 New Features:</span>
+                <p>HTML 5 introduces new semantic elements, enhanced multimedia, and better APIs.</p>
+                <section class="section">
+                    <span>Feature 1:</span>
+                    <p>Details about HTML5 feature 1...</p>
+                </section>
+                <section class="section">
+                    <span>Feature 2:</span>
+                    <p>Details about HTML5 feature 2...</p>
+                </section>
+                <section class="section">
+                    <span>Feature 3:</span>
+                    <p>Details about HTML5 feature 3...</p>
+                </section>
+            </article>
+        </div>
+
+        <aside class="sidebar">
+            <figure class="course-card">
+                <figcaption>Java Full Stack Developer</figcaption>
+                <img src="Documents/java.avif" alt="Java Full Stack">
+            </figure>
+            <figure class="course-card">
+                <figcaption>Web Full Stack Developer</figcaption>
+                <img src="Documents/java.avif" alt="Web Full Stack">
+            </figure>
+            <figure class="course-card">
+                <figcaption>AWS Developer</figcaption>
+                <img src="Documents/java.avif" alt="AWS Developer">
+            </figure>
+            <figure class="course-card">
+                <figcaption>DevOps Developer</figcaption>
+                <img src="Documents/java.avif" alt="DevOps Developer">
+            </figure>
+        </aside>
+    </main>
+
+    <footer>
+        Copyrights © 2019 Java Learning Center. All Rights Reserved.
+    </footer>
+</body>
+</html>

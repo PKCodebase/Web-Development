@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Semantic Elements</title>
+    <style>
+        body {
+            font-family: 'Cambria', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: goldenrod;
+            padding: 15px 30px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+        .content {
+            flex: 2;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .aside {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .course-card {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid goldenrod;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .course-card:hover {
+            transform: scale(1.05);
+            background: #fffbe0;
+        }
+        .course-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 5px solid goldenrod;
+            background: #fffbe0;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: goldenrod;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/cc-logo.gif" width="150px">
+        <nav>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <h2>Java 9 New Features</h2>
+            <p>Java 9 introduces various new features and improvements. Here are some key updates.</p>
+            <div class="section">
+                <h3>Feature 1</h3>
+                <p>Description of Java 9 new feature 1.</p>
+            </div>
+            <div class="section">
+                <h3>Feature 2</h3>
+                <p>Description of Java 9 new feature 2.</p>
+            </div>
+            
+            <h2>HTML5 New Features</h2>
+            <p>HTML5 brings numerous enhancements for web development.</p>
+            <div class="section">
+                <h3>Feature 1</h3>
+                <p>Description of HTML5 new feature 1.</p>
+            </div>
+            <div class="section">
+                <h3>Feature 2</h3>
+                <p>Description of HTML5 new feature 2.</p>
+            </div>
+            <div class="section">
+                <h3>Feature 3</h3>
+                <p>Description of HTML5 new feature 3.</p>
+            </div>
+        </div>
+
+        <aside class="aside">
+            <h2>Popular Courses</h2>
+            <div class="course-card">
+                <img src="Documents/java.avif" height="150">
+                <figcaption>Java Full Stack Developer</figcaption>
+            </div>
+            <div class="course-card">
+                <img src="images/angularDEV.jpg" height="150">
+                <figcaption>Angular Developer</figcaption>
+            </div>
+            <div class="course-card">
+                <img src="images/awsDev.jpg" height="150">
+                <figcaption>AWS Developer</figcaption>
+            </div>
+            <div class="course-card">
+                <img src="images/devopsEng.jpg" height="150">
+                <figcaption>DevOps Engineer</figcaption>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        Copyrights © 2025 Java Learning Center. All Rights Reserved.
+    </footer>
+</body>
+</html>
