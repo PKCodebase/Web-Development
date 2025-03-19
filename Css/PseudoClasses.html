@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html>  
+<head> 
+<meta charset="utf-8"> 
+<title>CSS : Psuedo Class Selectors</title> 
+<style> 
+p:first-child{ 
+color:red; 
+} 
+p:last-child{ 
+color:green; 
+} 
+p:nth-child(3){ 
+color:lightskyblue; 
+} 
+p::first-letter{ 
+font-size: 2em; 
+} 
+/* 
+.my-class::first-line{ 
+color:blue; 
+font-size: 25px; 
+font-weight: bold; 
+}       
+*/ 
+#my-id::first-line{ 
+color:goldenrod; 
+font-size: 25px; 
+font-weight: bold; 
+} 
+input:focus{ 
+background-color:lightblue; 
+border-color :  red; 
+} 
+input:required{
+    color: greenyellow;
+    background-color: antiquewhite;
+}
+input:optional{
+    color: blanchedalmond;
+    background-color: aquamarine;
+}
+</style> 
+</head> 
+<body> 
+    Full Name : <input type="text" name="fname" autofocus/> <br/> 
+    Email ID : <input type="text" name="email" required/> <br/> 
+   Phone No : <input type="text" name="phone"/> <br/> 
+    <div> 
+          <p> Java Training </p> 
+          <p> Python Training </p> 
+          <p> Spring Boot Training </p> 
+          <p> Angular Training </p> 
+          <p> MongoDB Training </p> 
+    </div> 
+    <div class="my-class" id="my-id"> 
+Anyone who has passion about teaching and having in-depth 
+Add some 5 lines of text here 
+    </div> 
+</body>   
+</html>

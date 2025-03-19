@@ -1,0 +1,29 @@
+'<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS : Inheritance</title>
+    <style>
+      div {
+        color: red;
+        border: 2px solid green;
+      }
+      p:first-child {
+        border: inherit;
+      }
+
+      p:last-child {
+        color: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Hello Guys how are you?
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+      <p>Paragraph 4</p>
+    </div>
+  </body>
+</html>

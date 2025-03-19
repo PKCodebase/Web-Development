@@ -1,0 +1,18 @@
+p{
+    color: aqua; /* Type selector */
+}
+#hai{
+    color: green;  /*Id selector*/
+}
+#ok{
+    color: yellow;  
+}
+.myclass{
+    color: blueviolet;  /*class Selector*/
+}
+input{
+    color: cadetblue;
+}
+input[type="text"]{   /*attribute selector*/
+
+}

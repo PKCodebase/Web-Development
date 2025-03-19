@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* Adjacent Sibling  Combinator (+) */
+         /* It is adding style in adjacent P+1 element*/
+        /* p:first-of-type + p{
+            color: red;
+            font-size: 25px;
+        }
+
+        #p5+p{
+            color: blue;
+            font-size: 25px;  
+        }
+        p+h2{
+            color: antiquewhite;
+            font-size: 30px;
+        }
+            
+        #p8+h2{
+            color: blue;
+            font-size: 25px;
+        } */
+
+
+
+
+        /* General Sibling Combinator(~)
+        /* It is add style after First element */
+         /* p:first-child~p{
+        color: red;
+        font-size: 25px;
+       }
+
+       #p6~p{
+        color: aquamarine;
+        font-size: 30px;
+       }
+
+       p~h2{
+        color: chartreuse;
+       } 
+
+       #p5~h2{
+        color: blueviolet;
+       }
+
+       #p2~h2{
+        color: burlywood;
+       } */
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p> Paragraph 1</p>
+        <p id="p2">Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+        <h2>Heading 1</h2>
+        <h2>Heading 2</h2>
+    
+    </div>
+
+   
+    <div>
+        <p id="p5"> Paragraph 5</p> 
+        <p id="p6"> Paragraph 6</p> 
+        <p id="p7"> Paragraph 7</p> 
+        <p id="p8"> Paragraph 8</p> 
+        <h2>Heading 3</h2>
+    <h2>Heading 4</h2>
+    </div>
+
+    
+</body>
+</html>

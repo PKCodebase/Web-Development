@@ -1,0 +1,17 @@
+#my-menu{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+a{
+    color: greenyellow;
+}
+a[target]{
+    font-size: 2em;
+}
+a[target=_blank]{
+    color:goldenrod;
+    text-decoration: none;
+}
+.menu{
+    border: 2px solid black;
+}
