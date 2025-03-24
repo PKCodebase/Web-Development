@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Animations</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px; /* Added rounded corners */
+            animation: color-animation 4s , move-animation 3s;
+            /* animation: color-animation 10s  6; */
+
+        }
+
+        @keyframes color-animation {
+            0% { background-color: red; }
+            25% { background-color: blue; }
+            50% { background-color: goldenrod; }
+            75% { background-color: green; }
+            100% { background-color: red; }
+        }
+
+        @keyframes move-animation {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(300px, 0); }
+            50% { transform: translate(200px, 300px); }
+            75% { transform: translate(0, 300px); }
+            100% { transform: translate(0, 0); }
+        }
+    </style>
+</head>
+<body>
+    <div>Hello Guys</div>
+</body>
+</html>
