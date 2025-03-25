@@ -4,15 +4,7 @@ Welcome to the Web Development Repository! :
 
 This repository contains various HTML, CSS, JavaScript, and Bootstrap projects, study guides, and resources to help you learn and improve your web development skills.
 
-🛠️ Technologies Used
-HTML5 
-
-CSS3 
-
-JavaScript (ES6+) 🛠
-
-Bootstrap 
-
+🛠️ Technologies Used: HTML5 , CSS3 ,JavaScript (ES6+) ,Bootstrap 
 
 📖 Study Guides Available
 This repository also includes study guides for:
