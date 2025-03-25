@@ -22,8 +22,9 @@ Clone the repository:
 git clone https://github.com/PKCodebase/Web-Development.git
 
 
-📧 Contact
-For any queries, feel free to reach out.
+📧 Contact:For any queries, feel free to reach out.
+
+Email:kaushikprasad1659@gmail.com
 
 Happy Coding! 🚀🎉
 
