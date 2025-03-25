@@ -26,5 +26,4 @@ git clone https://github.com/PKCodebase/Web-Development.git
 
 Email:kaushikprasad1659@gmail.com
 
-Happy Coding! 🚀🎉
 
