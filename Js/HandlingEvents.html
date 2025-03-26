@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 30px;
+            font-family: Cambria;
+            margin: 50px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to PkCodebase</h2>
+    <p onclick="show();" >Js practice</p>
+
+    <p ondblclick="show2();" >React practice</p>
+
+    <p  onmouseover="show1()" onmouseout="show3()">Java practice</p>
+    <script>
+    window.alert("My name is kaushik");
+
+    function show(){
+        window.alert("You clicked on js training")
+        window.console.log("You clicked on js training")
+    }
+
+    function show2(){
+        //alert("Double click on React Traning")
+        console.log("Double click on React Traning")
+    }
+    function show1(){
+       // alert("Mouseover on java training")
+        console.log("Mouseover on java training")
+    }
+    function show3(){
+        //alert("Mouseout on java training")
+        console.log("MouseOut on java Training")
+    }
+    </script>
+</body>
+
+</html>
