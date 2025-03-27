@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,div,input{
+            padding: 15px;
+            font-family: Cambria;
+            font-size: 30px;
+            border: 2px solid black;
+            margin: 30px;
+            border-radius: 7px;
+            height: 50px;
+            width: 500px;
+            background-color: bisque;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myhello">Hello Guys</h1>
+    
+    <div id="myhai">Hi Guys</div>
+      <input type="button" value="changeText" onclick="changeText()";/>
+    <script>
+        function changeText(){
+          var hello = document.getElementById("myhello");
+          console.log(hello.innerHTML)
+          hello.innerHTML="Welcome to PkCodeBase"
+          console.log(hello.innerHTML) 
+
+          var hi = document.getElementById("myhai")
+          console.log(hi.innerHTML)
+          hi.innerHTML= hi.innerHTML+"OK"
+          console.log(hi.innerHTML)
+        }
+    </script>
+</body>
+</html>

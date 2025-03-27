@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 15px;
+            font-family: Cambria;
+            font-size: 30px;
+            border: 2px solid black;
+            margin: 30px;
+            border-radius: 7px;
+            /* height: 50px; */
+            width: 500px;
+            background-color: bisque;
+            /* text-align: center; */
+            padding-left: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <!-- <input type="button" value="changeText" onclick="show()";/> -->
+
+    <script>
+        function myprint(data){
+           var div = document.getElementById("mydiv")
+           div.innerHTML = div.innerHTML + data + "<br/>"
+        }
+
+        myprint("Variables")
+
+        var x = 10;
+        myprint(x)
+        var y = 20;
+        myprint(y)
+        var z = 30
+        myprint(z)
+
+
+        var sum = x+y+z;
+        myprint("Sum : " +sum)
+    </script>
+</body>
+</html>

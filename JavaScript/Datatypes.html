@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        padding: 15px;
+        font-family: Cambria;
+        font-size: 30px;
+        border: 2px solid black;
+        margin: 30px;
+        border-radius: 7px;
+        /* height: 50px; */
+        width: 500px;
+        background-color: bisque;
+        /* text-align: center; */
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <!-- <input type="button" value="changeText" onclick="show()";/> -->
+
+    <script>
+      function myprint(data) {
+        var div = document.getElementById("mydiv");
+        div.innerHTML = div.innerHTML + data + "<br/>";
+      }
+
+      myprint("<u>1.Data Types</u>");
+
+      var x = 10;
+      myprint(x);
+      myprint(typeof x);
+
+      myprint("<u>2.Float Values<u>");
+      var y = 9.9;
+      myprint(y);
+      myprint(typeof y);
+
+      myprint("<u>3.Boolean values<u>");
+      var flag1 = true;
+      myprint(flag1);
+      myprint(typeof flag1);
+
+      var flag2 = false;
+      myprint(flag2);
+      myprint(typeof flag2);
+
+      myprint("<u>4.String Types</u>");
+      var name = "kaushik";
+      myprint(name);
+      myprint(typeof name);
+
+      myprint("<u>Array<u>");
+      var myarray = [10, 20, 30, 40];
+      myprint(myarray);
+      myprint(typeof myarray);
+
+      myprint("<u>Date<u>");
+      var mydate = new Date();
+      myprint(mydate);
+      myprint(typeof mydate);
+    </script>
+  </body>
+</html>

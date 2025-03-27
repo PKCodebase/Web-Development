@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        padding: 15px;
+        font-family: Cambria;
+        font-size: 30px;
+        border: 2px solid black;
+        margin: 30px;
+        border-radius: 7px;
+        /* height: 50px; */
+        width: 500px;
+        background-color: bisque;
+        /* text-align: center; */
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <!-- <input type="button" value="changeText" onclick="show()";/> -->
+
+    <script>
+      function myprint(data) {
+        var div = document.getElementById("mydiv");
+        div.innerHTML = div.innerHTML + data + "<br/>";
+      }
+
+      myprint("<u>1.Data Types</u>");
+
+      var x = 10;
+      function show() {
+        var y = 20;
+        if (true) {
+          var z = 30; //In Block scope is not possible with var keyword its allow outside block also
+          // let z = 30  Allow block scope
+        }
+        myprint(x);
+        myprint(y);
+        myprint(z);
+      }
+
+      show();
+      myprint(x);
+    </script>
+  </body>
+</html>
