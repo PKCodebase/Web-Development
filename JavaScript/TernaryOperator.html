@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+    <style>
+           div{
+            width: 500px;
+            border: 2px solid black;
+            border-radius: 7px;
+            background-color: bisque;
+            margin: 20px;
+            padding-left: 30px;
+            font-size: 25px;
+            font-weight: 100;
+            font-family: Cambria;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+        function show(data){
+            var mydata = document.getElementById("mydiv")
+            console.log(mydata)
+            mydata.innerHTML = mydata.innerHTML + data +"<br/>"
+        }
+        show("<u>Ternary Operator<u>")
+            var a = 10;
+            var b = 20;
+
+            var max = (a>b)? a :  b;
+            show("Max : " + max)
+
+            var min = (a<b) ? a : b;
+            show("Min : "+ min)
+
+            show("--------------------------")
+
+            var a = 10;
+            var b = 20;
+            var c = 30;
+
+            var max = (a>b && a>c)? a :  (b>c)? b : c
+            show("Max : " + max)
+            var min = (a<b && a<c)? a: (b<c)? b:c
+            show("Min : "+ min)
+    </script>
+</body>
+</html>

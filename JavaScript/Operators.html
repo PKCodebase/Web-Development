@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opearators</title>
+    <style>
+        div{
+            width: 500px;
+            border: 2px solid black;
+            border-radius: 7px;
+            background-color: bisque;
+            margin: 20px;
+            padding-left: 30px;
+            font-size: 25px;
+            font-weight: 100;
+            font-family: Cambria;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+        function print(data){
+            var div = document.getElementById("mydiv")
+            div.innerHTML = div.innerHTML+data+"<br/>"
+        }
+        print("<u>1.Arithmetic Operators:<u>")
+            var a=5; 
+        var b=3 
+        print(" a  =>"+ a); 
+        print(" b  =>"+ b); 
+        print("a + b => "+ (a + b)); 
+        print("a - b => "+ (a - b)); 
+        print("a * b => "+ (a * b));
+        print("a ** b => "+ (a ** b)); //to the power 
+        print("a / b => "+ (a / b));   // result is number 
+        print("a % b => "+ (a % b));
+        
+    
+ 
+        print("<u>2) Assignment Operators </u> :") 
+
+        var a=5; 
+         
+         a+=2;  // a=a+2; 
+         print(" a  =>"+ a); 
+  
+         var a=5; 
+         a-=2;  // a=a-2; 
+         print(" a  =>"+ a); 
+  
+         var a=5; 
+         a*=2;  // a=a*2; 
+         print(" a  =>"+ a); 
+  
+         var a=5; 
+         a**=2;  // a=a**2; 
+         print(" a  =>"+ a); 
+  
+         var a=5; 
+         a/=2;  // a=a/2; 
+         print(" a  =>"+ a); 
+  
+         var a=5; 
+         a%=2;  // a=a%2; 
+         print(" a  =>"+ a);  
+    </script>
+</body>
+</html>

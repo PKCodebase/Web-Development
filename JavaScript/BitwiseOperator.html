@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div{
+            width: 500px;
+            border: 2px solid black;
+            border-radius: 7px;
+            background-color: bisque;
+            margin: 20px;
+            padding-left: 30px;
+            font-size: 25px;
+            font-weight: 100;
+            font-family: Cambria;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+        function myprint(data){
+            var mydata = document.getElementById("mydiv")
+            mydata.innerHTML = mydata.innerHTML+data+"<br/>"
+        }
+        myprint("<u>Bitwise Operator<u>")
+            var a = 19;
+            myprint("a<<1   :  "+ (a<<1))
+            myprint("a<<2   :  "+ (a<<2)); 
+            myprint("a<<3   :  "+ (a<<3)); 
+
+
+            myprint("a>>1   :  "+ (a>>1)); 
+            myprint("a>>2   :  "+ (a>>2)); 
+            myprint("a>>3   :  "+ (a>>3)); 
+
+            myprint("--------")
+
+
+            var x=15; 
+            var y=18; 
+
+            myprint("x & y  :  "+ (x & y)); 
+            myprint("x | y  :  "+ (x | y)); 
+            myprint("x ^ y  :  "+ (x ^ y)); 
+        myprint("~x   :  "+ ( ~x )); 
+        myprint("~y   :  "+ ( ~y )); 
+        myprint("0101<<1   :  "+ (0b101<<1)); 
+        myprint("0101>>1   :  "+ (0b101>>1)); 
+        myprint("0101>>2   :  "+ (0b101>>2));
+    </script>
+</body>
+</html>

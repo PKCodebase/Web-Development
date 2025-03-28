@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constant and Default Value</title>
+    <style>
+      div {
+        padding: 15px;
+        font-family: Cambria;
+        font-size: 30px;
+        border: 2px solid black;
+        margin: 30px;
+        border-radius: 7px;
+        /* height: 50px; */
+        width: 500px;
+        background-color: bisque;
+        /* text-align: center; */
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <!-- <input type="button" value="changeText" onclick="show()";/> -->
+
+    <script>
+      function myprint(data) {
+        var div = document.getElementById("mydiv");
+        div.innerHTML = div.innerHTML + data + "<br/>";
+      }
+
+      myprint("<u>1.Data Types</u>");
+
+      var x ;
+      myprint(x);
+      myprint(typeof x);
+
+    //   myprint(y)
+    //   myprint(typeof y)
+
+     
+      var  x = 10;
+      myprint(x);
+      x=20
+      myprint(x)
+      myprint(typeof x);
+
+      let  z = 10;
+      myprint(z);
+      z=30
+      myprint(z)
+      myprint(typeof z);
+
+      const a = 40
+      myprint(a)
+      a=40;
+      myprint(a);
+
+
+
+
+
+     
+      
+    </script>
+  </body>
+</html>
