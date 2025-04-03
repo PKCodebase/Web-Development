@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div{
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: bisque;
+        width: 60%;
+        font-size: 26px;
+        font-family: Cambria;
+        margin: 20px;
+        padding: 15px;
+     }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script> 
+        function myprint(data){ 
+            var mydiv= document.getElementById("mydiv"); 
+            console.log(mydiv); 
+            mydiv.innerHTML =  mydiv.innerHTML + data +"<br/>"; 
+        } 
+
+        myprint("<u> Literals </u> ");
+
+        x = 101; 
+        myprint(x);
+
+        x = 0o101;  // ✅ Correct Octal representation
+        myprint(x);
+
+        x = 0X101; 
+        myprint(x);
+
+        x = 0B101; 
+        myprint(x);
+
+        myprint("-------------");
+
+        x = 9.9; 
+        myprint(x);
+
+        x = 9.999E2; 
+        myprint(x);
+
+        myprint("-------------");
+
+        x = true; 
+        myprint(x);
+
+        x = false; 
+        myprint(x);
+
+        myprint("-------------");
+
+        x = "Hello"; 
+        myprint(x);
+
+        x = "A"; 
+        myprint(x);
+
+        x = "\u0041"; // ✅ Correct Unicode for 'A'
+        myprint(x);
+
+        x = '\u0041\u0042'; // ✅ Unicode for 'AB'
+        myprint(x);
+
+        myprint("Done"); 
+    </script>
+</body>
+</html>

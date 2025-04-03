@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     div{
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: bisque;
+        width: 60%;
+        font-size: 26px;
+        font-family: Cambria;
+        margin: 20px;
+        padding: 15px;
+     }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+        function show(data){
+            let mydata = document.getElementById("mydiv");
+            console.log(mydata);
+            mydata.innerHTML = mydata.innerHTML + data + "<br/>";
+        }
+
+        show("Operator: Instance,NewInstance,Type Of!!!");
+
+        let a = 10;
+        show("value : " +a)
+        show("Type : " + typeof(a));
+
+        var b = "kaushik";
+        show("value : " + b)
+        show("Type : " + typeof(b));
+        
+        var  mystr = new String("kundan");
+        show("value : " + mystr);
+        show("Type : " + typeof(mystr))
+
+
+    var arr=new Array(3); 
+      arr[0]=10; 
+      arr[1]=20; 
+      arr[2]=30; 
+      show("value : " + arr); 
+      show("Type : " + typeof arr);
+
+      var dob = new Date();
+      show("Value : " + dob.getDate()+"-"+dob.getMonth()+"-"+dob.getFullYear())
+      show("Type : " + typeof(dob))
+
+      show("---------------");  
+      show(dob instanceof Date); //T 
+      show(dob instanceof Array); 
+      show(dob instanceof String); 
+
+      show("---------------");  
+      show(arr instanceof Date); 
+      show(arr instanceof Array); //T 
+      show(arr instanceof String); 
+
+      show("---------------");  
+      show(mystr instanceof Date); 
+      show(mystr instanceof Array); 
+      show(mystr instanceof String); //T 
+ 
+      show("---------------");  
+ 
+      show(mystr instanceof Object);  
+      show(arr instanceof Object);  
+      show(dob instanceof Object); 
+
+    </script>
+</body>
+</html>
