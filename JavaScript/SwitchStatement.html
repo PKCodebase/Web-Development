@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch statement</title>
+    <style>
+      div {
+        border: 1px solid black;
+        background-color: bisque;
+        border-radius: 5px;
+        width: 60%;
+        font-size: 30px;
+        padding-left: 18px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <script>
+      show = (data) => {
+        var mydata = document.getElementById("mydiv");
+        console.log(mydata);
+        mydata.innerHTML = mydata.innerHTML + data + "<br/>";
+      };
+
+      show("Switch statement:");
+
+      var day = new Date().getDay();
+      switch (day) {
+        case 0:
+          show("Sunday");
+          break;
+        case 1:
+          show("Monday");
+          break;
+        case 2:
+          show("Tuesday");
+          break;
+        case 3:
+          show("Wednesday");
+          break;
+        case 4:
+          show("Thrusday");
+          break;
+        case 5:
+          show("Friday");
+          break;
+        case 6:
+          show("Saturday");
+          break;
+
+        default:
+          show("Invalid");
+      }
+      var x = "0";
+      switch (x) {
+        case 0:
+          show("Zero");
+          break;
+        case 1:
+          show("One");
+          break;
+        default:
+          show("Invalid");
+      }
+
+      var x = "0";
+      switch (x) {
+        case "0":
+          show("Zero");
+          break;
+        case "1":
+          show("One");
+          break;
+        default:
+          show("Invalid");
+      }
+      show("Done");
+    </script>
+  </body>
+</html>

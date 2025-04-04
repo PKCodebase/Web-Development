@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If statement</title>
+    <style>
+        div{
+            border: 1px solid black;
+            background-color: bisque;
+            border-radius: 5px;
+            width: 60%;
+            font-size: 30px;
+            padding-left: 18px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+        function show(data){
+        let mydata = document.getElementById("mydiv")
+        console.log(mydata)
+        mydiv.innerHTML = mydiv.innerHTML+data+"<br/>" 
+        }
+
+       show("<u>Control statements :</u>")
+       var a = 10;
+       if(a>=10){
+        show("A is greater")
+       }
+
+       if(a==10){
+        show("A is qual to 10.")
+       }
+      show("______________________________________________")
+      var a = 10;
+      var b = 20;
+      var max;
+
+      if(a>b){
+        max = a;
+      }else
+      max = b;
+
+      show("Max : "+max);
+      show("___________________________________")
+
+      var a = 10; 
+    var b = 20; 
+    var c = 30; 
+    var max; 
+    if (a > b && a > c) { 
+      max = a; 
+    } else if ((b > c)) { 
+      max = b; 
+    } else { 
+      max = c; 
+    } 
+    show("Max : " +max)
+    show("DONE")
+
+    </script>
+</body>
+</html>
