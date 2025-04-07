@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 25px;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 60%;
+            padding-left: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "mydiv"></div>
+    <script>
+        show=(data)=>{
+            var mydata = document.getElementById("mydiv")
+            console.log(mydata)
+            mydata.innerHTML = mydata.innerHTML+data+"<br/>"
+        }
+        show("<u>Arrays: </u>")
+
+        var arr = [10,20,30]; //One way
+        show(typeof(arr))
+
+        for(var i=0;i<arr.length;i++){
+            show(arr[i]);
+        }
+        show("---------------------------------------------")
+        show(arr[0])
+        show("---------------------------------------------")
+        var arr=["Java","JavaScript","Angular"]; 
+        show(arr); 
+        show(typeof arr); 
+        show("---------------------------------------------")
+        for( i in arr){
+            show(arr[i])
+        }
+
+         show("---------------------------------------------")
+         var arr = new Array(10,20,30)   // Another way Constructor
+        
+         for( i in arr){
+            show(arr[i])
+         }
+
+         show("---------------------------------------------")
+        var arr=new Array("Java","JavaScript","Angular"); 
+        for(var i=0;i<arr.length;i++){ 
+            show(arr[i]); 
+        } 
+        show("------------"); 
+        show("Done"); 
+    </script>
+</body>
+</html>
