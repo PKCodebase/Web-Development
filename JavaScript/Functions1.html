@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <style>
+      div{
+        font-size: 25px;
+        border: 1px solid black;
+        width: 50%;
+        margin: 10px;
+        padding: 10px
+      }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+        normal=(data)=>{
+            let mydata = document.getElementById("mydiv")
+            mydata.innerHTML += data + "<br/>"
+        }
+
+
+        findSum=(a,b)=>{
+            let mysum = document.getElementById("mydiv")
+            mysum.innerHTML += (a+b) + "<br/>"
+        }
+
+         show=()=>{ 
+          var x=10; 
+          normal(x) 
+          normal("Hello Guys"); 
+          console.log("I am show()"); 
+
+          // return "undefined"   default return 
+            
+        } 
+
+        normal("<u>Exploring Functions<u>")
+        //show()
+
+        var res = show(); 
+        normal(res);
+
+        normal("------------");
+        
+    
+
+        var res1=findSum(10,20); 
+        show(res1); 
+        normal("------------------")
+        var res2=findSum("10","20"); 
+        show(res2); 
+        normal("------------");
+        normal("Done")
+    </script>
+</body>
+</html>

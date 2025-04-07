@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions-2</title>
+    <style>
+          div{
+            font-size: 25px;
+          }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+          print=(data)=> { 
+          var mydata=document.getElementById("mydiv"); 
+          mydata.innerHTML += data+"</br>" 
+      }
+
+      print("<u>Functions-2<u>")
+
+        var arr = [10,20,30,40,50];
+        
+        showArray=(arr1)=>{
+            print("in func:before"+arr1)
+            arr1[2]=99; 
+            print("in func : After: "+arr1);
+        }
+
+        showArray(arr) 
+        print("out func : "+arr); //A
+
+        print("------------");
+        
+        function sumArray(arr1){ 
+          var sum=0; 
+          for(i in arr1){ 
+            sum+=arr1[i]; 
+          } 
+          return sum; 
+        } 
+        var res=sumArray(arr); 
+        print(res); 
+       
+        print("------------"); 
+        print("Done"); 
+    </script>
+
+</body>
+</html>

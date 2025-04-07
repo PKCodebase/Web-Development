@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>JS : Creating HTML elements with JS </title> 
+    <style> 
+      div{ 
+         margin: 50px; 
+         border:2px solid red; 
+         border-radius: 10px; 
+         width:500px; 
+         font-size:25px; 
+         background-color: goldenrod; 
+         padding-left: 20px; 
+
+     } 
+     
+     #mytable{ 
+         margin: 20px; 
+         border:2px solid rgb(15, 15, 15); 
+         border-radius: 10px; 
+         width:30%; 
+         padding: 10px; 
+         line-height: 1.5; 
+     } 
+    
+     ol{ 
+       list-style:circle; 
+     }  
+    </style> 
+</head> 
+<body> 
+ <div id="mydiv"> </div> 
+    <script> 
+       show=(data)=> { 
+          var mydata=document.getElementById("mydiv"); 
+          mydata.innerHTML += data+"</br>" 
+      } 
+    
+        show("<u> Creating HTML elements with JS  </u> ") 
+         
+       var arr=["Java","Angular","Python"]; 
+ 
+        var str="<ol>"; 
+       for (i in arr){ 
+         str=str+"<li>"+arr[i]+"</li>"; //<li>Java</li> 
+       } 
+        str=str+"</ol>" 
+       show(str); 
+
+
+       show("---------------------------------------------")
+ 
+       var str="<table id='mytable'>"; 
+        var arr1 = ["Ravi","kausik","Mohan","Rakesh"]
+ 
+       for (i in arr1){ 
+         str=str+"<tr><td>"+arr1[i]+"</td></tr>"; 
+       } 
+
+       str=str+"</table>" 
+       show(str); 
+      show("Done"); 
+ </script> 
+</body> 
+</html> 

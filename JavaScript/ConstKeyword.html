@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const keyword()</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 50%;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+         const show=(data)=>{
+            let mydata = document.getElementById("mydiv")
+            mydata.innerHTML += data +"<br/>"
+            
+        }
+        show("<u>Const Keyword</u>")
+        show(10);
+
+        show("------------------------------")
+
+        const a = 20;
+        show(a)
+        // a=30
+        // show("New Value",a);
+   
+        show("------------------------------")
+
+        let c = 30
+        show(c)
+        c=50
+        show("New Value : "+c)
+
+    </script>
+</body>
+</html>
