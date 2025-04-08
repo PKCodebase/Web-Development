@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS : Functions- 5</title>
+    <style>
+      div {
+        margin: 50px;
+        border: 2px solid red;
+        border-radius: 10px;
+        height: 500px;
+        width: 500px;
+        font-size: 25px;
+        background-color: goldenrod;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <script>
+      function print(data) {
+        var mydata = document.getElementById("mydiv");
+        mydata.innerHTML += data + "</br>";
+      }
+
+      print("<u>JS : Functions- 5 </u> ");
+
+      function show() {
+        var a = 55; //Local
+        print(a);
+        a = a + 10;
+        print(a);
+      }
+
+      show();
+      print("----------------------");
+      show();
+      print("------------");
+
+      var x = 66; //Global
+      function show1() {
+        print(x);
+        x = x + 10;
+        print(x);
+      }
+      show1();
+      print("------------");
+      show1();
+
+      print("Done");
+    </script>
+  </body>
+</html>
