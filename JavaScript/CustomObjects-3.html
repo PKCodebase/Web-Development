@@ -1,0 +1,71 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>JS : Custom Objects - 3 </title> 
+    <style> 
+     div{ 
+         margin: 50px; 
+         border:2px solid red; 
+         border-radius: 10px; 
+         height:600px; 
+         width:500px; 
+         font-size:25px; 
+         background-color: goldenrod; 
+         padding-left: 20px; 
+     } 
+    </style> 
+   </head> 
+<body> 
+ <div id="my-data-div"> </div> 
+ 
+    <script> 
+      function print(data) { 
+          var mydiv=document.getElementById("my-data-div"); 
+          mydiv.innerHTML=mydiv.innerHTML+data+"</br>" 
+      } 
+        print("<u>Custom Objects - 3 </u> ") 
+         
+         var cust={ 
+             cid:101, 
+             cname:"Sri", 
+             phone:12345, 
+      
+             getCid:function(){ 
+                 return this.cid; 
+             }, 
+             getCname:function(){ 
+                 return this.cname; 
+             }, 
+             getPhone:function(){ 
+                return this.phone; 
+             }, 
+             setCid:function(cid){ 
+                 this.cid=cid; 
+             }, 
+             setCname:function(cname){ 
+                  this.cname=cname; 
+             }, 
+             setPhone:function(phone){ 
+                 this.phone=phone; 
+             } 
+             } 
+         console.log(cust); 
+         print(typeof cust); 
+ 
+         print("Way to call Object functions"); 
+         print(cust.getCid()); 
+         print(cust.getCname()); 
+         print(cust.getPhone()); 
+         cust.setCname("Srinivas"); 
+         cust.setPhone(9999); 
+         print(cust.getCid()); 
+         print(cust.getCname()); 
+         print(cust.getPhone()); 
+ 
+          
+        print("Done"); 
+ </script> 
+</body> 
+</html> 

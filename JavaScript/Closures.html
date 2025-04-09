@@ -32,10 +32,12 @@
         } 
  
         increment1(); 
-        print("Counter : "+counter); 
+        print("Counter : "+counter);
+        
+        
         increment1(); 
-                                
         print("Counter : "+counter); 
+
         increment1(); 
         print("Counter : "+counter); 
           print("------------"); 
@@ -43,13 +45,16 @@
         counter=counter+5;  // Problem 
  
         increment1(); 
-        print("Counter : "+counter); 
+        print("Counter : "+counter);
+        
+        
         print("------------"); 
 
-        counter=counter+5;
+       counter=counter+5;
         increment1(); 
         print("Counter : "+counter); 
         print("--------------------------------------------------------------"); 
+        
         
         function increment2(){ 
           var counter=0; 
@@ -59,14 +64,16 @@
         print("Counter : "+increment2()); 
         print("Counter : "+increment2()); 
         print("Counter : "+increment2()); 
-     // Problem 
         print("---------------------------------------------------------------"); 
    
        //use Java Script Closure to fix 
+       //Closure  is special function with special Syntax
+       //Closuse has one  variable and return function
+
         var increment = (   
             function () { 
-                var counter = 0; //Only Once 
-                console.log("Hello Guys"); ////Only Once 
+                var counter = 0; // execute Only Once 
+                console.log("Hello Guys"); //Execute Only Once 
                  return function () { 
                     counter++; 
                     return counter 
@@ -81,6 +88,8 @@
           print("Counter : "+increment()); 
           print("Counter : "+increment()); 
         print("Done"); 
+
+
        // A closure is a function having access to the parent scope, 
        // even after the parent function has closed. 
       //The self-invoking function only runs once. 
