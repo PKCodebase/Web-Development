@@ -27,6 +27,7 @@
         } 
         print("<u>Exploring - Date Object - 1</u> ") 
  
+        //Getter
         var cd = new Date(); //Current Date 
         print(cd); 
         var yy = cd.getFullYear(); 
@@ -44,6 +45,7 @@
         print(hh + "-" + mi + "-" + ss + "-" + ms); 
         print("getTime() : " + cd.getTime()) //Timestamp 
  
+        //Setter
         var dueDate = new Date(); 
         print(dueDate); 
         dueDate.setDate(5); 
@@ -55,6 +57,7 @@
         dueDate.setMilliseconds(500); 
         print(dueDate); 
  
+        //Constructor
         var dd = new Date(2026, 1, 5, 4, 30, 30, 500); 
         print(dd); 
  

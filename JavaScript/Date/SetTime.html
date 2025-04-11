@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="setCurrentTime()">
+    <div id="mydiv"></div>
+
+    <form name="myclock">
+        <span>
+            <input 
+            type="radio" 
+            id="fomat-12" 
+            name="mytime" 
+            checked>
+            12 Hours Format
+        </span>
+
+        <span>
+            <input
+            type="radio"
+            id="fomat-24"
+            name="mytime">
+            24 Hours Format
+        </span>
+    </form>
+
+
+    <script>
+      function setCurrentTime() {
+      const date = new Date();
+
+      let hh = date.getHours();
+      let mm = date.getMinutes();
+      let ss = date.getSeconds();
+      let time = "";
+      let ad = "";
+
+      // Check 12-hour format
+      if (document.myclock.mytime[0].checked) {
+        ad = "AM";
+
+        if (hh >= 12) {
+          ad = "PM";
+          if (hh > 12) {
+            hh -= 12
+        };
+        }
+
+        if (hh === 0) {
+          hh = 12;
+        }
+
+        // Padding
+        hh = hh < 10 ? "0" + hh : hh;
+        mm = mm < 10 ? "0" + mm : mm;
+        ss = ss < 10 ? "0" + ss : ss;
+
+        time = `${hh}:${mm}:${ss} ${ad}`;
+      } else {
+        // 24-hour format
+        hh = hh < 10 ? "0" + hh : hh;
+        mm = mm < 10 ? "0" + mm : mm;
+        ss = ss < 10 ? "0" + ss : ss;
+
+        time = `${hh}:${mm}:${ss}`;
+      }
+
+      document.getElementById("mydiv").innerHTML = time;
+
+      setTimeout(setCurrentTime, 1000);
+    }
+
+    </script>
+</body>
+</html>
