@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>JS : Exploring - Array Object  - 2</title> 
+    <style> 
+     div{ 
+         margin: 50px; 
+         border:2px solid red; 
+         border-radius: 10px; 
+         width:600px; 
+         font-size:25px; 
+         background-color: goldenrod; 
+         padding-left: 20px; 
+     } 
+            
+    </style> 
+   </head> 
+<body> 
+ <div id="my-data-div"> </div> 
+    <script> 
+      function print(data) { 
+          var mydiv=document.getElementById("my-data-div"); 
+          mydiv.innerHTML=mydiv.innerHTML+data+"</br>" 
+      } 
+        print("<u>Exploring - Array Object - 2 </u> ") 
+ 
+        let arr=[10,59,20,35,30,25,40,50]; 
+        print(arr); 
+       
+         arr.reverse(); 
+        print(arr) 
+ 
+        arr.sort(); 
+        print(arr) 
+        print("---------------"); 
+         arr=[10,20,30,40,50,60]; 
+        print(arr) 
+        let x= arr.shift(); 
+        print(arr); 
+        print(x) 
+         x=arr.shift(); 
+       print(arr); 
+        print(x) 
+        print("---------------"); 
+     
+    var y=arr.unshift(99); 
+     print(y) 
+     print(arr); 
+     print("---------------"); 
+     var y=arr.unshift(123); 
+     print(y) 
+     print(arr); 
+     print("---------------"); 
+ </script> 
+</body></html>    

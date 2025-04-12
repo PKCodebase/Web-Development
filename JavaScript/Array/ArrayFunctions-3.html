@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>JS : Exploring - Array Object -3</title> 
+    <style> 
+     div{ 
+         margin: 50px; 
+         border:2px solid red; 
+         border-radius: 10px; 
+         width:600px; 
+         font-size:25px; 
+         background-color: goldenrod; 
+         padding-left: 20px; 
+     } 
+    </style> 
+   </head> 
+<body> 
+ <div id="my-data-div"> </div> 
+    <script> 
+      function print(data) { 
+          var mydiv=document.getElementById("my-data-div"); 
+          mydiv.innerHTML+=data+"</br>" 
+      } 
+ 
+        print("<u>Exploring - Array Object  - 3</u> ") 
+ 
+        let arr1=[10,20,30]; 
+        print(arr1); 
+        let arr2=[11,22,33]; 
+        print(arr2); 
+        print("---------------"); 
+ 
+        let x=arr1.concat(arr2); 
+        print(x); 
+        print("------------------")
+        print(arr1); 
+        print(arr2); 
+          x=arr2.concat(arr1); 
+         print(x); 
+ 
+         print("---------------"); 
+         let p=arr1.join(); 
+         print(typeof p); 
+         print(p) //"10,20,30" 
+         print(p[0])   //print character at index 0
+         print(p[1]) 
+         print(p[2]) 
+ 
+          p=arr1.join("--*--"); 
+         print(typeof p);
+
+         print(p) // "10--*--20--*--30" 
+         print(p[0]) 
+         print(p[1]) 
+         print(p[2]) 
+ 
+         print("---------------"); 
+         var myarray=[10,20,30,20,30,40,50]; 
+      var q=myarray.includes(10); //true 
+      print(q) 
+      var q=myarray.includes(50); //true 
+      print(q) 
+      var q=myarray.includes(99);//false 
+      print(q) 
+      print("---------------"); 
+ 
+          var arr=new Array(5); 
+         arr[0]=10; 
+         arr[1]=20; 
+         print(arr) 
+ 
+         arr.fill(99);  //fill all elements with 99
+         print(arr) 
+       print("Done"); 
+ </script> 
+</body></html>  

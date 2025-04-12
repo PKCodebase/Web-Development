@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>JS : Exploring - Array Object-6 </title> 
+    <style> 
+     div{ 
+         margin: 50px; 
+         border:2px solid red; 
+         border-radius: 10px; 
+         width:600px; 
+         font-size:25px; 
+         background-color: goldenrod; 
+         padding-left: 20px; 
+     } 
+    </style> 
+   </head> 
+<body> 
+ <div id="my-data-div"> </div> 
+ 
+    <script> 
+      function print(data) { 
+          var mydiv=document.getElementById("my-data-div"); 
+          mydiv.innerHTML=mydiv.innerHTML+data+"</br>" 
+      } 
+ 
+        print("<u>Exploring - Array Object  - 6</u> ") 
+         
+         let  arr=["Angular","NodeJS","ReactJS","ExpressJS"]; 
+         let arr1=[10,20,30,40];
+         print(arr); 
+         for(let index in arr){ 
+                 print(index+"      " +arr[index]); 
+            } 
+ 
+            print("---------------"); 
+ 
+            function showArray1(item,index){ 
+              print(index+"   :   " +item); 
+            } 
+ 
+            function showArray2(item,index){ 
+              if(index%2==0){ 
+                print(index+"   :   " +item); 
+              } 
+            } 
+ 
+          arr.forEach(showArray1);  //Function call depends on number of Arguments
+          print("---------------"); 
+ 
+          arr.forEach(showArray2); 
+          print("---------------"); 
+
+
+          let arrs=[10,20,30,40];
+          function evenNumber(item,index){
+            if(index %2===0){
+              print(index+"    :  " +item); 
+            }
+          }
+
+            arrs.forEach(evenNumber);
+             
+       print("Done"); 
+       /*  
+      function that takes another function as  an argument is called as higher-order function. 
+      function that returns a function as a result is also called as higher-order function. 
+         */ 
+ </script> 
+</body> 
+</html>   

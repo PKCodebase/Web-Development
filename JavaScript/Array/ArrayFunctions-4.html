@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>JS : Exploring - Array Object -4</title> 
+    <style> 
+     div{ 
+         margin: 50px; 
+         border:2px solid red; 
+         border-radius: 10px; 
+         width:600px; 
+         font-size:25px; 
+         background-color: goldenrod; 
+         padding-left: 20px; 
+     } 
+    </style> 
+   </head> 
+<body> 
+ <div id="my-data-div"> </div> 
+    <script> 
+      function print(data) { 
+          var mydiv=document.getElementById("my-data-div"); 
+          mydiv.innerHTML=mydiv.innerHTML+data+"</br>" 
+      } 
+ 
+        print("<u>Exploring - Array Object  - 4</u> ") 
+        
+      var myarray=[10,20,30,20,30,40,50]; 
+ 
+      var myindex=myarray.indexOf(20); //1 
+      print(myindex) 
+      var myindex=myarray.indexOf(30);//2 
+      print(myindex) 
+        var myindex=myarray.lastIndexOf(20);//3 
+      print(myindex) 
+      var myindex=myarray.lastIndexOf(30);//4 
+      print(myindex) 
+      var myindex=myarray.indexOf(50);//6 
+      print(myindex) 
+      var myindex=myarray.lastIndexOf(50);//6 
+      print(myindex) 
+      var myindex=myarray.indexOf(60); //-1 
+      print(myindex) 
+      var myindex=myarray.lastIndexOf(60);// -1 
+      print(myindex) 
+      print("---------------"); 
+ 
+      var myarray=[10,20,30,40,50,60,70]; 
+      var arrX=myarray.slice(); 
+      print("Arr:"+arrX) 
+      var arrX=myarray.slice(1,3);
+      print(arrX) 
+      var arrX=myarray.slice(1,5); 
+      print(arrX) 
+      print("Done"); 
+ </script> 
+</body> 
+</html>    

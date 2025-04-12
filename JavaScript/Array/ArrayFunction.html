@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>JS : Exploring - Array Object  - 1</title> 
+    <style> 
+     div{ 
+         margin: 50px; 
+         border:2px solid red; 
+         border-radius: 10px; 
+         width:600px; 
+         font-size:25px; 
+         background-color: goldenrod; 
+         padding-left: 20px; 
+     } 
+    </style> 
+   </head> 
+<body> 
+ <div id="my-data-div"> </div> 
+    <script> 
+      function print(data) { 
+          var mydiv=document.getElementById("my-data-div"); 
+          mydiv.innerHTML=mydiv.innerHTML+data+"</br>" 
+      } 
+ 
+        print("<u>Exploring - Array Object - 1 </u> ") 
+ 
+        let arr=[10,59,20,35,30,25,40,50]; 
+        print(arr); 
+        print(arr.length) 
+ 
+        let first=arr[0]; 
+        let last=arr[arr.length-1]; 
+ 
+        print(first); 
+        print(last); 
+        print("---------------"); 
+
+        print(arr);
+
+        let x= arr.push("Hello"); 
+        print(arr); 
+        print("x = "+ x) 
+      
+        let y= arr.push("99","Hai Guys"); 
+        print(arr); 
+        print("y = "+y) 
+       
+     x= arr.pop(); 
+     print(x) 
+     print(arr); 
+
+     x= arr.pop(); 
+     print(x) 
+     print(arr); 
+     print("---------------"); 
+      
+       print("Done"); 
+ </script> 
+</body> 
+</html>    
