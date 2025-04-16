@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argument Object</title>
+</head>
+<body>
+    <h3>Arguments Object</h3>
+    <script>
+        function show(){
+            console.log("----show()----");
+            console.log("Length : " + arguments.length);
+            for(let x of arguments){
+               console.log(x); 
+            }
+        }
+
+        show()
+        show(10)
+        show(10, 20)
+        show(10, 20, 30)
+    </script>
+</body>
+</html>

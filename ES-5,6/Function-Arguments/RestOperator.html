@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator</title>
+</head>
+<body>
+    <h3>Rest Operator</h3>
+    <script>
+        function show(...myargs){
+            console.log("----show()----");
+            console.log("Length : " + myargs.length);
+            for(let x of myargs){
+               console.log(x); 
+            }
+        }
+
+
+        console.log(new Date(Date.now()).toString());
+
+        show()
+        show(10)
+        show(10, 20)
+        show(10, 20, 30)
+
+        console.log("Done")
+    </script>
+</body>
+</html>
