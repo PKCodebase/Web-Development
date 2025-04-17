@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<body> 
+    <h3> Arrow Functions Demo </h3> 
+    <script> 
+        show1 = () => { 
+            console.log("I am show 1"); 
+        } 
+        const show2 = (x) => { 
+            console.log("I am show 2", x); 
+        } 
+        const findSum = (x, y) => { 
+            return x + y; 
+        } 
+ 
+        show1(); 
+        show2(55); 
+        
+ 
+        let sum = findSum(100, 200); 
+        console.log("Sum : ", sum) 
+ 
+        const showStudent = (sname, email, phone) => { 
+            //let msg="Name : "+sname +", Email : "+email +", Phone : "+phone; 
+            let msg = `Name is ${sname} , Email is ${email} and Phone is ${phone}`; 
+            console.log(msg); 
+        } 
+ 
+         showStudent("Sri", "Sri@jlc", 12345); 
+        const showArray = (arr) => { 
+            for (let value of arr) { 
+                console.log(value); 
+            } 
+        } 
+ 
+        let myarr = [10, 20, 30, 40, 50]; 
+        showArray(myarr) 
+ 
+        console.log("Done!!!"); 
+    </script> 
+</body> 
+</html>
