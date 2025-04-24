@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<body> 
+    <h3> var and let </h3> 
+    <script> 
+        console.log("var and let ") 
+ 
+        let x = 10; 
+ 
+        function show() { //Function Definition 
+            let y = 20; 
+            if (true) { 
+                let z = 30; 
+                console.log("Inside If- x = " + x); 
+                console.log("Inside If- y = " + y); 
+                console.log("Inside If- z = " + z); 
+            } 
+            console.log("After If- x = " + x); 
+            console.log("After If- y = " + y); 
+            console.log("After If- z = " + z); 
+        } 
+        show(); //Function Call 
+        console.log("Outside show()- x = " + x); 
+        //console.log("Outside show()- y = "+y); 
+        //console.log("Outside show()- z = "+z); 
+ 
+        console.log("Done!!!"); 
+    </script> 
+</body> 
+</html>

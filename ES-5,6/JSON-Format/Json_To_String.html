@@ -15,6 +15,14 @@
         var mystring = JSON.stringify(mystudent); 
          console.log(typeof (mystring)); 
         console.log(mystring); 
+
+        sessionStorage.setItem("student", "kaushik");
+        localStorage.setItem("student", "Rahul");
+
+
+        sessionStorage.setItem("student", JSON.stringify(mystudent));
+        localStorage.setItem("student", JSON.stringify(mystudent));
+       
         console.log("Done!!!"); 
     </script> 
 </body> 
