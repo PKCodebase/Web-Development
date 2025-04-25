@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<body> 
+    <h3> Spread Operator- 3</h3> 
+ 
+    <script> 
+        // Creating Copy of Object 
+        const mystu = { 
+            sid: 101, 
+            sname: "Sri", 
+            email: 'sri@jlc', 
+            status: true, 
+            courses: ['Java', "Angular", "React JS"],  
+            address: { 
+                city: "Blore", 
+                state: "KA" 
+            } 
+        }; 
+ 
+        let mystu1 = { 
+            ...mystu 
+        }; 
+ 
+        console.log(mystu); 
+        console.log(mystu1); 
+        console.log(mystu == mystu1); 
+        console.log(mystu === mystu1); 
+ 
+        mystu.sname = "Srinivas"; 
+        mystu.email = "srinivas@jlc.com"; 
+ 
+        console.log(mystu); 
+        console.log(mystu1); 
+        console.log(mystu == mystu1); 
+        console.log(mystu === mystu1); 
+ 
+        /* 
+        let mystu2 = mystu; 
+        console.log(mystu == mystu2);  
+        console.log(mystu === mystu2); 
+        */ 
+        console.log("Done!!!"); 
+    </script> 
+</body> 
+</html>
