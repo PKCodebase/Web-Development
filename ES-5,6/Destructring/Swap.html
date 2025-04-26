@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<body> 
+    <h3> Destructuring Demo -3 </h3> 
+ 
+    <script> 
+        let a, b; 
+ 
+        [a, b] = [55]; 
+        console.log(a); 
+        console.log(b); 
+ 
+        [a = 10, b = 20] = []; 
+        console.log(a); 
+        console.log(b); 
+ 
+        [a = 10, b = 20] = [55]; 
+        console.log(a); 
+        console.log(b); 
+ 
+        [a = 10, b = 20] = [55, 99]; 
+        console.log(a); 
+        console.log(b); 
+ 
+        let x = 10; 
+        let y = 20; 
+        console.log(x); 
+        console.log(y); 
+ 
+        [x, y] = [y, x]; 
+        console.log(x); 
+        console.log(y); 
+ 
+        const arr = [10, 20, 30]; 
+        console.log(arr); 
+        [arr[2], arr[1]] = [arr[1], arr[2]]; 
+        console.log(arr); 
+ 
+        console.log("Done!!!"); 
+    </script> 
+</body> 
+</html> 

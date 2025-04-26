@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<body> 
+    <h3> Classes and Objects -1 </h3> 
+    <script> 
+        class Customer { 
+            //Instance Variables 
+            cid = 101; 
+            cname = "Sri"; 
+            email = "sri@jlc"; 
+             
+            //constructor 
+            constructor() { 
+                console.log(" I am 0-arg Con "); 
+            } 
+ 
+            //Instance Method 
+            showCustomer = () => { 
+                console.log(" showCustomer "); 
+                let sid=111111; 
+                console.log(this.cid); 
+                console.log(this.cname); 
+                console.log(this.email); 
+            } 
+          } 
+ 
+        let c1 = new Customer(); 
+        c1.showCustomer(); 
+
+        let c2 = new Customer(); 
+        c2.showCustomer(); 
+        console.log("Done!!!"); 
+    </script> 
+</body> 
+</html> 

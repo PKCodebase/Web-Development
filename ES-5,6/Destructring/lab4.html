@@ -1,0 +1,39 @@
+ 
+<!DOCTYPE html> 
+<html lang="en"> 
+<body> 
+    <h3> Destructuring Demo - 4 </h3> 
+ 
+    <script> 
+        const mystu = { 
+            sid: 101, 
+            sname: "Sri", 
+            email: 'sri@jlc', 
+            phone: 12345, 
+        };   
+        console.log(mystu.sid); 
+        console.log(mystu.sname); 
+        console.log(mystu.email); 
+        console.log(mystu.phone); 
+ 
+        mysid = mystu.sid; 
+        mysname = mystu.sname; 
+        myemail = mystu.email; 
+        myphone = mystu.phone; 
+ 
+        console.log(mysid); 
+        console.log(mysname); 
+        console.log(myemail); 
+        console.log(myphone); 
+ 
+        const {  sid, sname,  email, phone  } = mystu; 
+ 
+        console.log(sid); 
+        console.log(sname); 
+        console.log(email); 
+        console.log(phone); 
+ 
+        console.log("Done!!!"); 
+    </script> 
+</body> 
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<body> 
+    <h3> Destructuring Demo - 6</h3> 
+ 
+    <script> 
+        const mystu = { 
+            sid: 101, 
+            sname: "Sri", 
+            contactInfo: { 
+                email: 'sri@jlc', 
+                phone: 12345, 
+            }, 
+            address: { 
+                city: "Blore", 
+                state: "KA" 
+            }, 
+            courses: [{ 
+                    cid: "C-501", 
+                    cname: "Java Script", 
+                    trainer: "Srinivas" 
+                }, 
+                { 
+                    cid: "C-502", 
+                    cname: "Angular", 
+                    trainer: "Srinivas" 
+                }, 
+                { 
+                    cid: "C-503", 
+                    cname: "React", 
+                    trainer: "Srinivas" 
+                }, 
+            ] 
+        };  
+        console.log("----1--------"); 
+        console.log(mystu.courses); 
+ 
+        const [myjs, myangular, myreact] = mystu.courses; 
+        console.log(1, myjs); 
+        console.log(2, myangular); 
+        console.log(3, myreact); 
+ 
+        console.log("----2--------"); 
+        console.log(4, myjs.cid); 
+        console.log(5, myjs.cname); 
+        console.log(6, myjs.trainer); 
+ 
+        console.log("--------3-------"); 
+        console.log(myjs.cid); 
+        console.log(mystu.courses); 
+        myjs.cid = 9001; 
+        console.log(myjs.cid); 
+        console.log(mystu.courses); 
+ 
+        console.log("Done!!!"); 
+    </script> 
+</body> 
+</html>

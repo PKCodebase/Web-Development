@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<body> 
+    <h3> Destructuring Demo -1</h3> 
+ 
+    <script> 
+        const myarr1 = [55, 99]; 
+        const [a, b] = myarr1; 
+        console.log(a); 
+        console.log(b); 
+ 
+        const mycourses = ['Java Script', 'Angular', 'React']; 
+        const [C1, C2, C3] = mycourses; 
+        console.log(C1); 
+        console.log(C2); 
+        console.log(C3); 
+ 
+        console.log("Done!!!"); 
+
+        let myarr2=[1,2,3,4,5];
+        const[x,y,...remArray]=myarr2;
+        console.log(x);
+        console.log(y);
+        console.log(remArray);
+      console.log("____________________")
+
+      let info = {id:"101" ,
+      name:"John",
+       phone:"870924"
+    }
+
+    const {id, name, phone} = info;
+    console.log(id);    
+    console.log(name);
+    console.log(phone);
+    </script> 
+</body> 
+</html>
