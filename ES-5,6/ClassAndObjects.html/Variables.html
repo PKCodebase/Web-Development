@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<body> 
+    <h3> Classes and Objects -4</h3> 
+ 
+    <script> 
+        class Hello { 
+            a = 10; 
+            static b = 20; 
+            constructor() { 
+                console.log(" I am D.C "); 
+                this.c = 30; 
+            } 
+ 
+            showHello = () => { 
+                console.log(" showHello "); 
+                console.log("a = ", this.a); 
+                console.log("b = ", this.b); 
+                console.log("b = ", Hello.b); 
+                console.log("c = ", this.c); 
+            } 
+            static myshow() { 
+                console.log("i am static method- myshow()"); 
+                console.log("a = ", this.a); 
+                console.log("b = ", this.b); 
+                console.log("b = ", Hello.b); 
+                console.log("c = ", this.c); 
+            } 
+ 
+        } 
+
+ 
+        let hello = new Hello(); 
+ 
+        console.log("---calling showHello()---"); 
+        hello.showHello(); 
+ 
+        console.log("---way to access Properties---"); 
+        console.log("a = ", hello.a); 
+        console.log("b = ", hello.b); 
+        console.log("b = ", Hello.b); 
+        console.log("c = ", hello.c); 
+        console.log("---calling static methods()---"); 
+        // hello.myshow(); 
+        Hello.myshow(); 
+        console.log("Done!!!"); 
+    </script> 
+</body> 
+</html>

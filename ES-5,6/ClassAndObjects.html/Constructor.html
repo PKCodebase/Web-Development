@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<body> 
+    <h3> Classes and Objects -2 </h3> 
+    <script> 
+        class Student { 
+            /* 
+            constructor() { 
+                console.log(" I am D.C "); 
+            } 
+            */ 
+            constructor(sid, sname, email) { 
+                this.sid = sid; 
+                this.sname = sname; 
+                this.email = email; 
+            } 
+ 
+            showStudent = () => { 
+                console.log(" showStudent "); 
+                console.log(this.sid); 
+                console.log(this.sname); 
+                console.log(this.email); 
+            } 
+        } 
+ 
+        let stu1 = new Student(101, "Sri", "sri@jlc"); 
+        stu1.showStudent(); 
+ 
+        // console.log(stu1.sid); 
+        // console.log(stu1.sname); 
+        // console.log(stu1.email); 
+        // console.log("------------------"); 
+ 
+        let stu2 = new Student(102, "Vas", "vas@jlc"); 
+        stu2.showStudent(); 
+
+        // console.log(stu2.sid); 
+        // console.log(stu2.sname); 
+        // console.log(stu2.email); 
+ 
+        console.log("Done!!!"); 
+    </script> 
+</body> 
+</html>

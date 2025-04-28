@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<body> 
+    <h3> Map object</h3> 
+ 
+    <script> 
+        let mymap = new Map() 
+        console.log(mymap); 
+        console.log(mymap.size); 
+        mymap.set('sid', 101); 
+        mymap.set('sname', "Sri"); 
+        mymap.set('email', "Sri@jlc"); 
+        mymap.set('phone', 5599); 
+ 
+        console.log(mymap); 
+        console.log(mymap.size); 
+
+
+        console.log("-------------"); 
+
+        console.log(mymap.has('sname')); 
+        console.log(mymap.has('phone')); 
+        console.log(mymap.has('city')); 
+ 
+        console.log(mymap.get("sname")); 
+        console.log(mymap.get("phone")); 
+        console.log(mymap.get("city")); 
+        console.log("-------------"); 
+ 
+        console.log(mymap); 
+        console.log(mymap.size); 
+ 
+        console.log(mymap.delete('sname')); 
+        console.log( mymap.delete('city')); 
+           
+        console.log(mymap); 
+        console.log(mymap.size); 
+ 
+       
+        console.log("Done!!!"); 
+    </script> 
+</body> 
+</html> 

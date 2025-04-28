@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<body> 
+    <h3> Classes and Objects -5</h3> 
+    <script> 
+        class Customer { 
+            constructor(sid, sname) { 
+                console.log(" Customer -2 arg "); 
+ 
+                this.sid = sid; 
+                this.sname = sname; 
+            } 
+            showCustomer = () => { 
+                console.log(" showCustomer "); 
+                console.log(this.sid); 
+                console.log(this.sname); 
+            } 
+        } 
+        class GoldCustomer extends Customer { 
+            constructor(sid, sname, email, phone) { 
+                console.log(" GoldCustomer -4 arg "); 
+                super(sid, sname); 
+                this.email = email; 
+                this.phone = phone; 
+            } 
+ 
+            showGoldCustomer = () => { 
+                console.log(" showGoldCustomer "); 
+                console.log(this.sid); 
+                console.log(this.sname); 
+                console.log(this.email); 
+                console.log(this.phone); 
+            } 
+        } 
+ 
+        let mycust = new GoldCustomer(101, "Sri", "sri@jlc", 12345); 
+        mycust.showCustomer(); 
+        mycust.showGoldCustomer(); 
+ 
+        console.log("Done!!!"); 
+    </script> 
+</body> 
+</html>
